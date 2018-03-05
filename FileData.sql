@@ -1,9 +1,9 @@
 ﻿CREATE TABLE [dbo].[FileData] (
     [Id]               INT            IDENTITY (1, 1) NOT NULL,
-    [FileName]         NVARCHAR (100) NULL,
-    [Location]         NVARCHAR (100) NULL,
-    [MimeType]         NVARCHAR (100) NULL,
-    [Details]          NVARCHAR (100) NULL,
+    [FileName]         NVARCHAR (1000) NULL,
+    [Location]         NVARCHAR (1000) NULL,
+    [MimeType]         NVARCHAR (1000) NULL,
+    [Details]          NVARCHAR (1000) NULL,
     [CreatedOn]        DATETIME       DEFAULT (getdate()) NULL,
     [LocationCheckSum] INT            NOT NULL,
     [EditedOn]         DATETIME       NULL,
